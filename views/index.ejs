@@ -1,0 +1,59 @@
+<%- include ( './partials/head' ); %>
+<body>
+        <!--BARRA-->
+
+<header class="container-fluid " id="encabezadoPagina">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light " id="barraNav">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarDesplegable" aria-controls="navBarDesplegable" aria-expanded="false" aria-label="Toggle navigation" id="btnBurger">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navBarDesplegable">
+            <ul class="navbar-nav mb-2 mb-md-0 ulNavBar ">
+                <li class="nav-item active">
+                    <a href="/" class="nav-link px-2 link-secondary">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/clases" class="nav-link px-2 link-secondary">Clases</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/novedades" class="nav-link px-2 link-secondary">Novedades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/servicios" class="nav-link px-2 link-secondary">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/nosotros" class="nav-link px-2 link-secondary">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/" class="nav-link px-2 link-secondary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contacto</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <% if (!locals.userLogged) { %>
+
+            <div class=" text-end">
+                <li class=" btn "><a href="/user/login" class="nav-link p-0 ">Iniciar Sesión <i class="fas fa-sign-in-alt icono ml-1"></i></a>
+
+                </li>
+            </div>
+            <%}else{%>
+
+                <div class="">
+                    <li class="btn text-end ">
+                        <a href="/cuenta" class="nav-link "><i class="fas fa-user"></i></a>
+                    </li>
+                </div>
+
+
+
+                <% }%>
+
+
+    </nav>
+</header>
+    
+</body>
+</html>

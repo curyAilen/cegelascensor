@@ -1,0 +1,28 @@
+{
+  "name": "ceg-el-ascensor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/curyAilen/cegelascensor.git"
+  },
+  "author": "Ailen Cury",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/curyAilen/cegelascensor/issues"
+  },
+  "homepage": "https://github.com/curyAilen/cegelascensor#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "sequelize": "^6.28.0"
+  }
+}
